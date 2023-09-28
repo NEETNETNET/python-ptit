@@ -4,7 +4,9 @@ def check(a,b):
             return "NO"
     return "YES"
 for _ in range(int(input())):
-    a,b = [],[]
-    a.sort()
-    b.sort()
+    n = input()
+    a = [int(i) for i in input().split()]
+    b = [int(i) for i in input().split()]
+    a = sorted(a)
+    b = sorted(b)
     print(check(a,b))
